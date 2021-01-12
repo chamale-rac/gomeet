@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Source+Code+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=MuseoModerno:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald');
+
+body, p{
+    font-family: 'Cardo', serif;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+   }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    font-size: 10px;
+    font-family: 'MuseoModerno', cursive;
+	scroll-behavior: smooth;
+}
+a
+{
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+.container{
+    min-height: 94vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .1;
+    animation: key 2s ease forwards; 
+    
+}
+@keyframes key{
+    100%{
+        opacity: .9;
+
+    }
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color: black;
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.section-title span {
+    color: black
+}
+.cta{
+    z-index: 100;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 30px;
+    color: rgba(0, 0, 0, 0.681);
+    border: 2px solid grey;
+        background-color: transparent;
+    
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .9rem;
+    margin-top: 5px;
+    transition: 1s ease-in-out;
+    transition-property: background-color, color;
+    border-radius: 1%;
+    font-family: 'East Sea Dokdo', cursive;
+    animation: eli 6s ease-in-out none;
+}
+.cta:hover{
+    color: white;
+    border-color: black;
+    background-color: black;    
+    box-shadow: 0px 0px 20px 0 rgb(235, 229, 241);
+}
+
+@keyframes eli{
+    0%{
+        color: transparent;
+        border: 2px solid transparent;
+        background-color: transparent;
+
+    }
+    80%{
+        color: transparent;
+        border: 2px solid transparent;
+        background-color: transparent;
+
+    }
+    90%{
+        color: rgba(255, 255, 255, 0.619);
+        border: 2px solid white;
+        box-shadow: 0px 0px 30px 0 white;
+        background-color: white;
+    }
+    82%,100%{
+        color: rgba(0, 0, 0, 0.681);
+        border: 2px solid grey;
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 0 white;
+    }
+}
+
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.235);
+}
+.brand h1 span{
+    color: black;
+}
+
+#unique{   
+    
+    background-image:
+    
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
+        url('./img/background.jpg'); 
+    background-size: cover;
+    background-position: top-center;
+    position: relative;
+    z-index: 2;
+}
+
+#unique::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .1;
+    z-index: -1;
+}
+#unique .unique{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#unique .unique .box{
+    padding-bottom: 120px;
+}
+
+#unique h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;   
+    animation-delay: 1s; 
+}
+
+#unique h1:nth-child(1){ animation-delay: 1.3s;}
+#unique h1:nth-child(2){ animation-delay: 2.4s;}
+#unique h1:nth-child(3){ animation: text_reveal_name .5s ease forwards; animation-delay: 3.5s; }
+#unique h1:nth-child(4){ animation: text_reveal_name .5s ease forwards; animation-delay: 4s; }
+
+@keyframes text_reveal{
+    50%{
+        color: white;
+    }
+    100%{
+        color: rgba(255, 255, 255, 0.701);
+    }
+}
+@keyframes text_reveal_name{
+    0%{
+        
+        text-transform: none;
+    }
+    50%{
+        color: black;
+        text-transform: none;
+        font-weight: 2000;
+    }
+    100%{
+        color: rgba(0, 0, 0, 0.715);
+        font-weight: 2000;
+        text-transform: none;
+    }
+}
+
+#header{
+    position: fixed;
+    z-index:1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+#header .header{
+    min-height: 8vh;
+    background-color: transparent; /*Recordad que tambien se puede el RBGA*/
+    transition: .3s ease background-color;    
+}
+#header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+#header .nav-list ul{
+   list-style: none;
+   position: absolute;
+   background-color: rgb(31, 30, 30); 
+   opacity: 1;
+   width: 100vw;
+   height: 100vh;
+   left: 100%;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   overflow-x: hidden;
+   transition: .5s ease left;
+}
+#header .nav-list ul.active{
+    left: 0%;
+}
+
+
+#header .nav-list ul p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    padding: 28px;
+    display: block;
+    transition: .7s ease-in-out;
+    font-style: normal;
+    text-transform: none;
+}
+#header .nav-list ul .mini {
+    font-size: 1.4rem;
+
+
+    
+}
+#header .nav-list ul p::after{
+    content: attr(data-after);
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(128, 128, 128, 0.4);
+    font-size: 25rem;
+    letter-spacing: 50px;
+    z-index: -1;
+    transition: .3s ease letter-spacing;
+}
+#header .nav-list ul li:hover p::after{
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+#header .nav-list ul li:hover p{
+   color: white; 
+}
+#header .hamburger{
+    height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 3px solid rgba(255, 255, 255, 0.701);
+	border-radius: 1%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+	transform: scale(.8);
+    margin: 10px;
+}
+#header .hamburger::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+    border: 3px solid  rgba(255, 255, 255, 0.701);
+    animation: hamburger_puls 1s ease infinite;
+}
+#header .hamburger .bar{
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color:  rgba(255, 255, 255, 0.701);
+    z-index: -1;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.701);
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+#header .hamburger .bar::after{
+    top: 8px;
+}
+#header .hamburger .bar::before{
+    bottom: 8px;
+}
+#header .hamburger.active .bar::before{
+    bottom: 0;    
+}
+#header .hamburger.active .bar::after{
+    top: 0;
+}
+@keyframes hamburger_puls{
+    0%{
+      opacity: 1;
+      transform: scale(1);  
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+
+/*
+#icons .social-icon{
+    display: flex;
+    margin-bottom: 30px;  
+    margin-top: 30px;
+
+}*/
+
+
+#icons .social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+    /*    background-color: rgba(255, 255, 255, 0.311);*/
+    background-color: black;
+    opacity: .7;
+    border-radius: 25%;
+    transition: .4s ease-in-out;
+    padding: -10px -10px;
+    
+}
+#icons .social-item:hover img{
+    opacity: 1;
+    filter: grayscale(0);
+    box-shadow: 0px 0px 16px 0 white;
+    
+}
+/*#footer{
+   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+   background-color: black;
+   opacity: .9;
+   z-index: -1;
+} */
+
+
+
+
+
+
+
+
+
+
+#icons{
+    position: fixed;
+    z-index:500;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+#icons .icons{
+    min-height: 8vh;
+    background-color: transparent; /*Recordad que tambien se puede el RBGA*/
+    transition: .3s ease background-color;    
+}
+#icons .icons-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+#icons .icons-list ul{
+    border-radius: 5%;
+   list-style: none;
+   position: absolute;
+   opacity: 1;
+   width: 100vw;
+   height: 20vh;
+   right: 100%;
+   top: 68vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   overflow-x: hidden;
+   transition: .7s ease-in-out right;
+   
+}
+#icons .icons-list ul.active{
+    right: 0%;
+}
+
+
+#icons .icons-list ul a {
+   
+    padding: 14px;
+    display: block;
+    
+}
+
+#icons2 .icons2 .inherit{
+    background-color: black;
+    color: white;
+    
+   list-style: none;
+   position: absolute;
+   opacity: 1;
+   width: 100vw;
+   height: 6vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   overflow-x: hidden;
+   transition: .9s ease-in-out right;
+   text-align: center;
+   margin-top: 0;
+}
+
+#absolute .absolute{
+    list-style: none;
+    position: absolute;
+    background-color: transparent;
+    opacity: 1;
+    width: 100vw;
+    height: 95vh;
+    left: 0%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    overflow-x: hidden;
+    transition: .5s ease left;
+    animation: yy 3.9s ease none;
+ }
+ @keyframes yy{
+     0%{ z-index: 3;
+         background-color: black;
+     }
+     90%{
+         z-index: 3;
+     }
+     100%{
+         background-color: transparent;
+
+     }
+ }
+
+ input{
+    
+        list-style: none;
+        position: absolute;
+        background-color: rgb(31, 30, 30); 
+        opacity: 1;
+        width: 1vw;
+        height: 1vh;
+        left: 90%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: -4;
+        overflow-x: hidden;
+        transition: .5s ease left;
+     }
+
+}
