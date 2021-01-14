@@ -293,8 +293,8 @@ p{
    color: white; 
 }
 #header .hamburger{
-    height: 60px;
-	width: 60px;
+    height: 75px;
+	width: 75px;
 	display: inline-block;
 	border: 3px solid rgba(255, 255, 255, 0.701);
 	border-radius: 1%;
